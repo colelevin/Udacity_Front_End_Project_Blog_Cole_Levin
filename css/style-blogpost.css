@@ -39,11 +39,11 @@
   margin: 0.5rem;
 }
 
-.share img{
+.share img {
   height: 1.5rem;
 }
 
-.share{
+.share {
   background-color: white;
   border: none;
 }
@@ -78,7 +78,7 @@ figcaption {
   margin-bottom: 2rem;
 }
 
-@media(min-width:900px){
+@media(min-width:600px) {
   .blogcontainer{
     grid-template-columns: 50% 50%;
     grid-template-areas:
@@ -89,13 +89,13 @@ figcaption {
     "blog blog"
     "footer footer";
   }
-  .author_container{
+  .author_container {
     align-self: right;
   }
-  .nested_buttons{
+  .nested_buttons {
     align-self: left;
   }
-  .blogpage_image{
+  .blogpage_image {
     margin-top: 2rem;
   }
 }

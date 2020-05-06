@@ -7,16 +7,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Source+Sans+Pro&display=swap');
 
-h1{
+h1 {
  font-family: 'Roboto', sans-serif;
 }
 
-p{
+p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 100%;
 }
 
-body{
+body {
   margin: 10px
 }
 
@@ -29,7 +29,7 @@ a:hover {
   color: blue;
 }
 
-.box{
+.box {
   background-color: #444;
   color: #fff;
   border-radius: 5px;
@@ -37,12 +37,12 @@ a:hover {
   box-shadow: 2px 2px black;
 }
 
-.sidebar{
+.sidebar {
   grid-area: sidebar;
   padding: 0.5rem;
 }
 
-.container{
+.container {
   display: grid;
   grid-column-gap: 0.4rem;
   grid-row-gap: 0.5rem;
@@ -55,7 +55,7 @@ a:hover {
 }
 
 /* this is the box containing the blog preview, the entire box is clickable */
-.blog{
+.blog {
   grid-area: main;
   display: flex;
   flex-flow: column;
@@ -74,6 +74,7 @@ a:hover {
   color: black;
   border-radius: 5px;
 }
+
 .blogcard.description {
   border: 2px solid red;
   margin: 0.25rem;
@@ -86,8 +87,8 @@ a:hover {
 }
 
 /* set grid for medium screens */
-@media(min-width:400px){
-  .container{
+@media(min-width:320px) and (max-width: 900px) {
+  .container {
     grid-template-columns: 0.3fr 1fr;
     grid-template-areas:
     "header header"
@@ -97,8 +98,8 @@ a:hover {
 }
 
 /* set grid for large screens */
-@media(min-width:900px){
-  .container{
+@media(min-width:901px) {
+  .container {
     grid-template-columns: 0.3fr 0.35fr 0.35fr;
     grid-template-areas:
     "header header header"
