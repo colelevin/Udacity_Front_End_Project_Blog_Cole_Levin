@@ -32,6 +32,8 @@
   clip-path: circle();
 }
 
+.author_container .blogpage_author_box
+
 .nested_buttons {
   grid-area: share;
   display: flex;
